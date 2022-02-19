@@ -1,3 +1,3 @@
 # Instagramclone
 This is instagram clone.
-[this is clone of the instagram](https://paras-insta-clone.herokuapp.com/)
+[click to see the clone of instagram](https://instaclone0904.herokuapp.com/)
