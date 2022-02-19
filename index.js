@@ -17,9 +17,9 @@ mongoose.connection.on("error", (err) => {
 })
 app.use(cors())
 app.use(express.json());
-app.use("/api/auth", require("./Routers/userRouter"));
-app.use("/api/auth", require("./Routers/postRouter"));
-app.use("/api/auth", require("./Routers/user"));
+app.use(require("./Routers/userRouter"));
+app.use(require("./Routers/postRouter"));
+app.use(require("./Routers/user"));
 if (process.env.NODE_ENV === "production") {
     app.use(express.static('client/build'));
     const path = require('path');
