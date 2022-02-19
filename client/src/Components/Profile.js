@@ -29,7 +29,7 @@ const Profile = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    fetch("http://localhost:5000/api/auth/updatepic", {
+                    fetch("/updatepic", {
                         method: "put",
                         headers: {
                             "Content-Type": "application/json",
