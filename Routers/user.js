@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const post = require("../Models/Post");
 const user = require("../Models/User");
-const middleware = require("./Middleware/Middleware")
+const middleware = require("../Middleware/Middleware")
 router.get("/user/:id", middleware, (req, res) => {
     user.findOne({ id: req.params.id })
         .select("-password")
