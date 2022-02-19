@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const middleware = require("../Middleware/Middleware");
-const user = require("../Models/User");
+// const user = require("../Models/User");
 const post = require("../Models/Post");
 router.post("/createpost", middleware, (req, res) => {
     const { title, body, image } = req.body;

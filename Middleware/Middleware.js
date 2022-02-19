@@ -1,5 +1,4 @@
 const jwt = require("jsonwebtoken");
-// const JWT_SECRET = "paras123@#$nayal%^&";
 const {JWT_SECRET} = require("../config/keys");
 const user = require("../Models/User");
 const middleware = (req, res, next) => {
