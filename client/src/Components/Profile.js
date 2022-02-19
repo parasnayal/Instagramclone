@@ -23,7 +23,7 @@ const Profile = () => {
             data.append("file", image);
             data.append("upload_preset", "project");
             data.append("cloud_name", "paras0904");
-            fetch("http://api.cloudinary.com/v1_1/paras0904/image/upload", {
+            fetch("https://api.cloudinary.com/v1_1/paras0904/image/upload", {
                 method: "post",
                 body: data,
             })
